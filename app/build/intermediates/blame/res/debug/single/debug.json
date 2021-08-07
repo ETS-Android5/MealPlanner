@@ -1,0 +1,278 @@
+[
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_bld_row_design.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\bld_row_design.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_search_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_cardviewborder.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\custom_cardviewborder.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_lock_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_lock_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_pastri.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\pastri.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_applogo.jpg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\applogo.jpg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_schedule.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\fragment_schedule.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_itsfinalyarr.jpg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\itsfinalyarr.jpg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_button.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\custom_button.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_calendar_cell.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\calendar_cell.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lunchimage.jpeg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\lunchimage.jpeg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recipe_list.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\activity_recipe_list.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo.jpg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\logo.jpg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_visibility_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_visibility_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_another.jpg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\another.jpg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dinnerimage.jpeg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\dinnerimage.jpeg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_phone_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_phone_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_recipelist_row.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\recipelist_row.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_eatuplogo.jpg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\eatuplogo.jpg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_breakfastfinal.jpg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\breakfastfinal.jpg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_vegetables.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\vegetables.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_soup.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\soup.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_usersmain.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\activity_usersmain.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_remove_circle_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_remove_circle_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forget_password.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\activity_forget_password.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_cake.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\cake.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\font_carter_one.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\font\\carter_one.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logintransperent.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\logintransperent.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_searchview.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\custom_searchview.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_email_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_email_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_visibility_off_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_visibility_off_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_transperentlogo.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\transperentlogo.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_breakfast.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\breakfast.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pp.jpg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\pp.jpg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_steak.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\steak.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_circle_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_add_circle_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_account_circle_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_account_circle_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_coffee.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\coffee.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\font_alfa_slab_one.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\font\\alfa_slab_one.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_loginimage.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\loginimage.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_border.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\custom_border.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_remove_circle_outline_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_remove_circle_outline_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_textborder.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\textborder.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_watch_later_24.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\ic_baseline_watch_later_24.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_gfree.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable-v24\\gfree.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_threetwo.jpg.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\threetwo.jpg"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_breakfastpic.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\drawable\\breakfastpic.png"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\layout_category_row.xml.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\layout\\category_row.xml"
+    },
+    {
+        "merged": "C:\\GithubProjects\\MealPlanner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\GithubProjects\\MealPlanner\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    }
+]

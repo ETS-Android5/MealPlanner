@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/loginimage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/transperentlogo" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@drawable/custom_border"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="165dp"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorblue"
+        android:hint="@string/fname"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@drawable/custom_border"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:drawableTint="@color/colorblue"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:hint="@string/email"
+        />
+
+    <EditText
+        android:id="@+id/mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@drawable/custom_border"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorblue"
+        android:hint="@string/phone"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@drawable/custom_border"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorblue"
+        android:hint="@string/password"
+        android:drawableRight="@drawable/ic_baseline_visibility_24"
+        />
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Sign-in"
+        android:textColor="@color/colorwhite"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/signintologintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:text="@string/signtologintxt"
+        android:textColor="@color/colorwhite"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+</LinearLayout>

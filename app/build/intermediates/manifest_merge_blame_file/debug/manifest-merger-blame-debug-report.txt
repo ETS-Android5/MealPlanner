@@ -1,0 +1,83 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mealplanner"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="25"
+8-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:31:5-67
+11-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:31:22-64
+12
+13    <application
+13-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:5:5-29:19
+14        android:allowBackup="true"
+14-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:6:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\395caf503a19363977c06465a7c114a5\core-1.3.1\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:extractNativeLibs="false"
+18        android:icon="@drawable/logintransperent"
+18-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:7:9-50
+19        android:label="EatUP"
+19-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:8:9-30
+20        android:roundIcon="@drawable/logintransperent"
+20-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:9:9-55
+21        android:supportsRtl="true"
+21-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:10:9-35
+22        android:theme="@style/AppTheme" >
+22-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:11:9-40
+23        <activity android:name="com.example.mealplanner.RecipeList" />
+23-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:12:9-57
+23-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:12:19-45
+24        <activity android:name="com.example.mealplanner.SplashScreen" >
+24-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:13:9-19:20
+24-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:13:19-47
+25            <intent-filter>
+25-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:14:13-18:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:15:17-69
+26-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:15:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:17:17-77
+28-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:17:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity android:name="com.example.mealplanner.ForgetPassword" />
+31-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:20:9-52
+31-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:20:19-49
+32        <activity android:name="com.example.mealplanner.Usersmain" >
+32-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:21:9-22:20
+32-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:21:19-44
+33        </activity>
+34        <activity android:name="com.example.mealplanner.SignUp" />
+34-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:23:9-44
+34-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:23:19-41
+35        <activity android:name="com.example.mealplanner.Login" />
+35-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:24:9-43
+35-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:24:19-40
+36
+37        <meta-data
+37-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:26:9-28:57
+38            android:name="preloaded_fonts"
+38-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:27:13-43
+39            android:resource="@array/preloaded_fonts" />
+39-->C:\GithubProjects\MealPlanner\app\src\main\AndroidManifest.xml:28:13-54
+40
+41        <provider
+41-->[com.squareup.picasso:picasso:2.71828] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d338e85c407ab23d02c3297876a1ed9\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+42            android:name="com.squareup.picasso.PicassoProvider"
+42-->[com.squareup.picasso:picasso:2.71828] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d338e85c407ab23d02c3297876a1ed9\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+43            android:authorities="com.example.mealplanner.com.squareup.picasso"
+43-->[com.squareup.picasso:picasso:2.71828] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d338e85c407ab23d02c3297876a1ed9\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+44            android:exported="false" />
+44-->[com.squareup.picasso:picasso:2.71828] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d338e85c407ab23d02c3297876a1ed9\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+45    </application>
+46
+47</manifest>

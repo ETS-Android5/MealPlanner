@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/loginimage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/transperentlogo" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/uniqueid_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@drawable/custom_border"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="270dp"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorblue"
+        android:hint="@string/uniuqeid">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@drawable/custom_border"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorblue"
+        android:hint="@string/password"
+        android:drawableRight="@drawable/ic_baseline_visibility_24"/>
+
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forpass"
+        android:textColor="@color/colorwhite"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginVertical="10dp"
+        android:textAlignment="viewEnd"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/login"
+        android:textColor="@color/colorwhite"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/logtosignintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:text="@string/logtosignin"
+        android:textColor="@color/colorwhite"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+</LinearLayout>

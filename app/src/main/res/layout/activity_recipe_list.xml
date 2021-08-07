@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeList">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleforlist"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Select Recipes for"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorblue"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reclyclerviewrecipe"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Add"
+        android:visibility="gone"
+        android:textColor="@color/colorwhite"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>
