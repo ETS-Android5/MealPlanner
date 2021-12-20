@@ -10,4 +10,12 @@
     <color name="colorgold">#FFD700</color>
     <color name="colortransperent">#A8292828</color>
 
+    <color name="coloryellow">#FFFF00</color>
+
+    <color name="colorsilver">#707070</color>
+    <color name="colortestone">#D8DFFC</color>
+
+    <color name="colorred">#e2071d</color>
+    <color name="colorgreen">#41ad48</color>
+
 </resources>

@@ -2,12 +2,10 @@ package com.example.mealplanner;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,11 +16,13 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+import es.dmoral.toasty.Toasty;
+
 public class RecipelistAdapter extends RecyclerView.Adapter<RecipelistAdapter.RecipelistViewHolder> {
 
     Context context;
+    ArrayList<Details> recipelistdetails;
 
-    ArrayList<Details> recipelistdetails=new ArrayList<>();
     Boolean isSelected=false;
     ArrayList<Details> selectedItems=new ArrayList<>();
 
@@ -31,6 +31,7 @@ public class RecipelistAdapter extends RecyclerView.Adapter<RecipelistAdapter.Re
         this.recipelistdetails=recipelistdetails;
     }
 
+    @NonNull
     @Override
     public RecipelistViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(parent.getContext());
@@ -41,12 +42,13 @@ public class RecipelistAdapter extends RecyclerView.Adapter<RecipelistAdapter.Re
     @Override
     public void onBindViewHolder(final RecipelistAdapter.RecipelistViewHolder holder, final int position) {
 
-        //holder.imageforrecipe.setImageResource(recipelistdetails.get(position).getImage());
         Picasso.get().load(recipelistdetails.get(position).getImage())
                 .fit()
                 .into(holder.imageforrecipe);
         holder.nameforrecipe.setText(recipelistdetails.get(position).getName());
         holder.rrating.setText(recipelistdetails.get(position).getRatting());
+        holder.rcal.setText(recipelistdetails.get(position).getCalories());
+        holder.rduration.setText(recipelistdetails.get(position).getDuration());
 
     }
 
@@ -58,8 +60,8 @@ public class RecipelistAdapter extends RecyclerView.Adapter<RecipelistAdapter.Re
     public class RecipelistViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imageforrecipe;
-        TextView nameforrecipe;
-        TextView rrating;
+        TextView nameforrecipe,rrating,rcal,rduration;
+
         CardView cardviewforrecipe;
 
         public RecipelistViewHolder(final View itemView, Context context) {
@@ -93,7 +95,6 @@ public class RecipelistAdapter extends RecyclerView.Adapter<RecipelistAdapter.Re
                     {
                         if (selectedItems.contains(recipelistdetails.get(getAdapterPosition())))
                         {
-                            //itemView.setBackgroundColor(Color.TRANSPARENT);
                             cardviewforrecipe.setCardBackgroundColor(Color.WHITE);
                             selectedItems.remove(recipelistdetails.get(getAdapterPosition()));
                         }
@@ -105,17 +106,24 @@ public class RecipelistAdapter extends RecyclerView.Adapter<RecipelistAdapter.Re
                         {
                             isSelected=false;
                         }
-                    }
-                    else{
+                        else if (selectedItems.size()>3){
+                            Toasty.info(cardviewforrecipe.getContext(), "You can not select more than 3 recipes at a time",Toasty.LENGTH_LONG).show();
+                        }
+                        else {
 
+                        }
                     }
+
                 }
             });
 
-            imageforrecipe = (ImageView) itemView.findViewById(R.id.r_image);
-            nameforrecipe = (TextView) itemView.findViewById(R.id.r_name);
-            rrating = (TextView) itemView.findViewById(R.id.r_rate);
-            cardviewforrecipe=(CardView)itemView.findViewById(R.id.cardviewofrecipe);
+            imageforrecipe = itemView.findViewById(R.id.r_img);
+            nameforrecipe = itemView.findViewById(R.id.r_name);
+            rrating = itemView.findViewById(R.id.r_ratting);
+            rcal=itemView.findViewById(R.id.r_cal);
+            rduration=itemView.findViewById(R.id.r_duration);
+
+            cardviewforrecipe=itemView.findViewById(R.id.cardviewofrecipe);
 
         }
     }

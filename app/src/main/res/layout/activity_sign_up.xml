@@ -83,7 +83,6 @@
         android:drawablePadding="10dp"
         android:drawableTint="@color/colorblue"
         android:hint="@string/password"
-        android:drawableRight="@drawable/ic_baseline_visibility_24"
         />
 
     <Button

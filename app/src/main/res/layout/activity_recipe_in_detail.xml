@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeInDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="175sp"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="10sp"
+            app:cardCornerRadius="18sp">
+
+            <ImageView
+                android:id="@+id/rec_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/rec_name"
+            android:layout_marginBottom="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15sp"
+            android:text="recipe name"
+            android:maxLines="2"
+            android:textColor="@color/colorblue"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginVertical="5sp">
+
+            <TextView
+                android:id="@+id/rec_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="40 Min"
+                android:textColor="@color/colorsilver"
+                android:drawableTint="@color/colorsilver"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/ic_baseline_watch_later_24">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/rec_ratting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTint="@color/colorgold"
+                android:text="3/5"
+                android:textColor="@color/colorgold"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/ic_baseline_star_24">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/rec_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTint="@color/colorgreen"
+                android:text="120 cal"
+                android:textColor="@color/colorgreen"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/ic_baseline_watch_later_24">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

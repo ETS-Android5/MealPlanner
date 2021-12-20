@@ -1,5 +1,9 @@
 package com.example.mealplanner;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -8,15 +12,18 @@ import java.util.ArrayList;
 public class CalendarUtils {
     public static LocalDate selectedDate;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public static String monthYearFromDate(LocalDate date)
     {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM yyyy");
         return date.format(formatter);
     }
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public static ArrayList<LocalDate> daysInWeekArray(LocalDate selectedDate)
     {
         ArrayList<LocalDate> days = new ArrayList<>();
         LocalDate current = sundayForDate(selectedDate);
+
         LocalDate endDate = current.plusWeeks(1);
 
         while (current.isBefore(endDate))
@@ -27,6 +34,7 @@ public class CalendarUtils {
         return days;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private static LocalDate sundayForDate(LocalDate current) {
         LocalDate oneWeekAgo = current.minusWeeks(1);
 

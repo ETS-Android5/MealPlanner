@@ -2,9 +2,10 @@ package com.example.mealplanner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,26 +31,40 @@ public class Login extends AppCompatActivity {
 
     EditText email,password;
 
-    private String stringUrl="https://eatup-mealplanner.000webhostapp.com/phpfiles/login.php";
+    SharedPreferences sharedPreferences;
+    private static final String SHARED_PREF_NAME="mypref";
+    private static final String KEY_EMAIL="NAME";
+    private static final String KEY_PASSWORD="PASSWORD";
+
+    private final String stringUrl="https://eatup-mealplanner.000webhostapp.com/phpfiles/login.php";
     private RequestQueue requestQueue;
-    private static final String TAG=SignUp.class.getSimpleName();
+    //private static final String TAG=SignUp.class.getSimpleName();
     int success;
-    private String TAG_SUCCESS="success";
-    private String TAG_MESSAGE="message";
-    private String tag_json_obj="json_obj_req";
+    private final String TAG_SUCCESS="success";
+    private final String TAG_MESSAGE="message";
+    //private String tag_json_obj="json_obj_req";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        email=(EditText)findViewById(R.id.uniqueid_et);
-        password=(EditText)findViewById(R.id.password_et);
-
-        TextView logtosigntext=(TextView)findViewById(R.id.logtosignintxt);
-        TextView forgetpassword=(TextView)findViewById(R.id.forgetpassword);
-        Button loginbtn=(Button)findViewById(R.id.login_btn);
+        email=findViewById(R.id.uniqueid_et);
+        password=findViewById(R.id.password_et);
+        sharedPreferences=getSharedPreferences("UserInfo", Context.MODE_PRIVATE);
+        TextView logtosigntext=findViewById(R.id.logtosignintxt);
+        TextView forgetpassword=findViewById(R.id.forgetpassword);
+        Button loginbtn=findViewById(R.id.login_btn);
         requestQueue= Volley.newRequestQueue(getApplicationContext());
+
+        sharedPreferences=getSharedPreferences(SHARED_PREF_NAME,MODE_PRIVATE);
+
+        String emailid=sharedPreferences.getString(KEY_EMAIL,null);
+
+        if(emailid!=null){
+            Intent loginintent=new Intent(Login.this,Usersmain.class);
+            startActivity(loginintent);
+        }
 
         forgetpassword.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +104,12 @@ public class Login extends AppCompatActivity {
                     if (success == 1)
                     {
                         Toasty.success(getApplicationContext(), jsonObject.getString(TAG_MESSAGE), Toast.LENGTH_SHORT).show();
+
+                        SharedPreferences.Editor editor=sharedPreferences.edit();
+                        editor.putString(KEY_EMAIL,email.getText().toString());
+                        editor.putString(KEY_PASSWORD,password.getText().toString());
+                        editor.apply();
+
                         Intent logtomain=new Intent(Login.this,Usersmain.class);
                         startActivity(logtomain);
                         finish();
@@ -100,23 +121,24 @@ public class Login extends AppCompatActivity {
                 }
                 catch (Exception e)
                 {
-                    Toasty.error(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                    Toasty.error(getApplicationContext(),"Error : "+ e.getMessage(), Toast.LENGTH_LONG).show();
                 }
             }
         },new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toasty.error(getApplicationContext(),error.getMessage().toString(),Toast.LENGTH_LONG).show();
+                Toasty.error(getApplicationContext(),"Error : "+error.getMessage(),Toast.LENGTH_LONG).show();
 
             }
         }){
             public Map<String, String> getParams()
             {
 
-                Map<String, String> params = new HashMap<String, String>();
+                Map<String, String> params = new HashMap<>();
                 params.put("email",email.getText().toString().trim());
                 params.put("password",password.getText().toString().trim());
                 return params;
+
             }
         };
 

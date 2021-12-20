@@ -2,14 +2,18 @@ package com.example.mealplanner;
 
 public class Details {
 
-    private int Image;
-    private String name;
-    private String ratting;
+    private final int Image;
+    private final String name;
+    private final String ratting;
+    private final String calories;
+    private final String duration;
 
-    public Details(int image, String name, String ratting) {
+    public Details(int image, String name, String ratting,String calories,String duration) {
         Image = image;
         this.name = name;
         this.ratting = ratting;
+        this.calories=calories;
+        this.duration=duration;
     }
 
 
@@ -23,5 +27,13 @@ public class Details {
 
     public String getRatting() {
         return ratting;
+    }
+
+    public String getCalories() {
+        return calories;
+    }
+
+    public String getDuration() {
+        return duration;
     }
 }

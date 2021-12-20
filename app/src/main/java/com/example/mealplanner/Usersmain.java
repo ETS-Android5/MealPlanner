@@ -11,7 +11,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Usersmain extends AppCompatActivity {
 
-    private BottomNavigationView bottomNavigationView;
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,8 @@ public class Usersmain extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new HomeFragment()).commit();
     }
-    private BottomNavigationView.OnNavigationItemSelectedListener bottomNavMethod=new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+    private final BottomNavigationView.OnNavigationItemSelectedListener bottomNavMethod=new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
@@ -34,20 +35,16 @@ public class Usersmain extends AppCompatActivity {
                 case R.id.home:
                     fragment=new HomeFragment();
                     break;
-//                case R.id.category:
-//                    fragment=new CategoryFragment();
-//                    break;
 
                 case R.id.schedule:
                     fragment=new ScheduleFragment();
                     break;
-//                case R.id.profile:
-//                    fragment=new ProfileFragment();
-//                    break;
+
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
 
             return true;
         }
     };
+
 }

@@ -2,12 +2,10 @@ package com.example.mealplanner;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -22,7 +20,7 @@ import java.util.ArrayList;
 public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.ScheduleViewHolder> {
 
     Context context;
-    private int[] myimage;
+    final int[] myimage;
     ArrayList<String> recipename=new ArrayList<>();
 
     public ScheduleAdapter(Context c,int[] myimage) {
@@ -30,6 +28,7 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.Schedu
         this.myimage = myimage;
     }
 
+    @NonNull
     @Override
     public ScheduleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(parent.getContext());
@@ -82,7 +81,7 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.Schedu
         return myimage.length;
     }
 
-    public class ScheduleViewHolder extends RecyclerView.ViewHolder {
+    public static class ScheduleViewHolder extends RecyclerView.ViewHolder {
 
         ImageView mybldimage;
         CardView addrecipe;
@@ -94,12 +93,12 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.Schedu
         public ScheduleViewHolder(View itemView) {
 
             super(itemView);
-            listofrecipies=(ListView) itemView.findViewById(R.id.recipelistrecycle);
-            mybldimage=(ImageView)itemView.findViewById(R.id.imagesforbld);
-            addrecipe=(CardView)itemView.findViewById(R.id.addrecipe);
-            invisiblecard=(CardView)itemView.findViewById(R.id.invisiblecard);
-            addrecipetext=(TextView)itemView.findViewById(R.id.addrecipetext);
-            addicon=(ImageView)itemView.findViewById(R.id.addicon);
+            listofrecipies=itemView.findViewById(R.id.recipelistrecycle);
+            mybldimage=itemView.findViewById(R.id.imagesforbld);
+            addrecipe=itemView.findViewById(R.id.addrecipe);
+            invisiblecard=itemView.findViewById(R.id.invisiblecard);
+            addrecipetext=itemView.findViewById(R.id.addrecipetext);
+            addicon=itemView.findViewById(R.id.addicon);
 
         }
     }

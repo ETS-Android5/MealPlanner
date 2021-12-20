@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 public class CategoryAdapter extends BaseAdapter {
 
-    private HomeFragment context;
+    private final HomeFragment context;
     private LayoutInflater inflater;
     int[] cat_type_img;
 

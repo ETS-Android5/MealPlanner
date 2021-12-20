@@ -15,11 +15,13 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
-        android:icon="@drawable/logintransperent"
+        android:icon="@drawable/applogo"
         android:label="EatUP"
-        android:roundIcon="@drawable/logintransperent"
+        android:roundIcon="@drawable/applogo"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.mealplanner.RecipeInDetail" />
         <activity android:name="com.example.mealplanner.RecipeList" />
         <activity android:name="com.example.mealplanner.SplashScreen" >
             <intent-filter>
@@ -29,8 +31,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.mealplanner.ForgetPassword" />
-        <activity android:name="com.example.mealplanner.Usersmain" >
-        </activity>
+        <activity android:name="com.example.mealplanner.Usersmain" />
         <activity android:name="com.example.mealplanner.SignUp" />
         <activity android:name="com.example.mealplanner.Login" />
 

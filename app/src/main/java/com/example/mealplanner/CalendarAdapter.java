@@ -1,10 +1,13 @@
 package com.example.mealplanner;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,7 +25,7 @@ public class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>{
         this.onItemListener = onItemListener;
     }
 
-
+    @NonNull
     @Override
     public CalendarViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
@@ -31,14 +34,15 @@ public class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>{
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         if(days.size() > 15) //month view
             layoutParams.height = (int) (parent.getHeight() * 0.166666666);
-        else // week view
-            layoutParams.height = (int) parent.getHeight();
+        else
+            layoutParams.height = parent.getHeight();
 
         return new CalendarViewHolder(view, onItemListener, days,datecard);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public void onBindViewHolder(CalendarViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CalendarViewHolder holder, int position) {
         final LocalDate date = days.get(position);
         if(date == null)
             holder.dayOfMonth.setText("");

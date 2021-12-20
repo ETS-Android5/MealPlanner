@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ScheduleFragment">
 
     <LinearLayout
@@ -127,12 +128,282 @@
         android:layout_marginBottom="5dp"
         android:layout_height="50dp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bldrecycler"
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="60dp"/>
+        android:layout_height="50sp"
+        android:layout_marginHorizontal="12sp"
+        android:layout_marginTop="5sp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/colorblack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔥270 cal / 450 cal"
+                android:textSize="15sp"
+                android:layout_marginTop="5sp"
+                android:layout_below="@+id/breakfast"
+                android:textColor="@color/colorblack"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bf_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not Schedule yet"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/breakfast_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="12sp">
+
+                <RelativeLayout
+                    android:id="@+id/breakfast_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/ic_baseline_add_24"
+                        android:drawablePadding="5sp"
+                        android:drawableTint="@color/colorblue"
+                        android:text="Add Recipe"
+                        android:textColor="@color/colorblue" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginHorizontal="12sp"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Lunch"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorblack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔥150 cal /450 cal"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/lunch"
+                    android:textColor="@color/colorblack"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lu_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not Schedule yet"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lunch_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="12sp">
+
+                <RelativeLayout
+                    android:id="@+id/lunch_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Add Recipe"
+                        android:drawablePadding="5sp"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@drawable/ic_baseline_add_24"
+                        android:textColor="@color/colorblue"
+                        android:drawableTint="@color/colorblue"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginHorizontal="12sp"
+            android:layout_marginVertical="5sp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Dinner"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorblack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔥250 cal /450 cal"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/dinner"
+                    android:textColor="@color/colorblack"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dr_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not Schedule yet"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dinner_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60sp"
+            android:layout_marginHorizontal="20sp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="12sp">
+
+                <RelativeLayout
+                    android:id="@+id/dinner_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Add Recipe"
+                        android:drawablePadding="5sp"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@drawable/ic_baseline_add_24"
+                        android:textColor="@color/colorblue"
+                        android:drawableTint="@color/colorblue"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
 
     </LinearLayout>
 

@@ -1,47 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="175dp"
-    android:layout_height="250dp"
-    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardviewofrecipe"
-        android:layout_width="155dp"
-        android:layout_height="230dp"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
-        app:cardCornerRadius="20dp">
+        android:layout_width="match_parent"
+        android:layout_height="145sp"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="12sp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/r_image"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="155dp"/>
+                android:layout_height="110sp"
+                android:divider="#D3D3D3"
+                android:showDividers="end"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/r_name"
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:textSize="20dp"
-                android:layout_marginVertical="5dp"
-                android:textColor="@color/colorblack"
-                android:text="123"
-                android:layout_marginHorizontal="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/r_rate"
+                    <RelativeLayout
+                        android:layout_width="110sp"
+                        android:layout_height="110sp"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            app:cardCornerRadius="20sp"
+                            android:layout_margin="10sp">
+
+                            <ImageView
+                                android:id="@+id/r_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginVertical="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/r_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="abc"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorblue"/>
+
+                        <TextView
+                            android:id="@+id/r_ratting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:text="★★★★★"
+                            android:textColor="@color/colorgold"
+                            android:textSize="15sp"
+                            android:layout_marginTop="3dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="7sp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/r_cal"
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorgreen"
+                                    android:layout_height="wrap_content"
+                                    android:text="15" />
+
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorgreen"
+                                    android:layout_height="wrap_content"
+                                    android:text="Calories" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="35sp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/r_duration"
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="15sp"
+                                    android:layout_height="wrap_content"
+                                    android:text="20 m" />
+
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="12sp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Duration" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginBottom="5dp"
-                android:textSize="20dp"
-                android:text="123"
-                android:textColor="@color/colorgold"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:padding="7sp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/timeofr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="5sp"
+                        android:text="View"
+                        android:textColor="@color/colorred"
+                        android:textSize="15sp"
+                        app:drawableLeftCompat="@drawable/ic_baseline_visibility_24"
+                        app:drawableTint="@color/colorred" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="7sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp"
+                        android:drawablePadding="4sp"
+                        android:text="Add Repcipe"
+                        android:textColor="@color/colorblue"
+                        android:textSize="15sp"
+                        app:drawableLeftCompat="@drawable/ic_baseline_add_24"
+                        app:drawableTint="@color/colorblue" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 

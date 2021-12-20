@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -7,6 +7,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,7 +34,7 @@
         android:background="@drawable/custom_border"
         android:padding="10dp"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="280sp"
         android:inputType="text"
         android:drawableLeft="@drawable/ic_baseline_account_circle_24"
         android:drawablePadding="10dp"
@@ -47,12 +52,12 @@
         android:padding="10dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="20dp"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:drawablePadding="10dp"
         android:drawableTint="@color/colorblue"
         android:hint="@string/password"
-        android:drawableRight="@drawable/ic_baseline_visibility_24"/>
+        />
 
     <TextView
         android:id="@+id/forgetpassword"
@@ -77,16 +82,19 @@
         android:textColor="@color/colorwhite"
         android:textSize="20dp"/>
 
-    <TextView
-        android:id="@+id/logtosignintxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:layout_marginHorizontal="15dp"
-        android:text="@string/logtosignin"
-        android:textColor="@color/colorwhite"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/logtosignintxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginVertical="20sp"
+            android:text="@string/logtosignin"
+            android:textColor="@color/colorwhite"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -30,24 +30,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reclyclerviewrecipe"
         android:layout_width="match_parent"
-        android:layout_marginBottom="45dp"
+        android:layout_marginHorizontal="10sp"
         android:layout_height="match_parent"/>
 
-
     </LinearLayout>
-
     </ScrollView>
-
-    <Button
-        android:id="@+id/addbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="10dp"
-        android:background="@drawable/custom_button"
-        android:text="Add"
-        android:visibility="gone"
-        android:textColor="@color/colorwhite"
-        android:layout_marginBottom="15dp"/>
 
 </RelativeLayout>

@@ -2,11 +2,10 @@ package com.example.mealplanner;
 
 public class RecipelistDetails {
 
-    private int Image;
-    private String name;
-    private String ratting;
-    private Boolean isselected=false;
-
+    private final int Image;
+    private final String name;
+    private final String ratting;
+    final Boolean isselected;
 
     public RecipelistDetails(int image, String name, String ratting, Boolean isselected) {
         Image = image;

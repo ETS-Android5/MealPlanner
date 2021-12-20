@@ -17,8 +17,8 @@ public class ForgetPassword extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget_password);
 
-        final EditText mailornumber=(EditText)findViewById(R.id.forgetpasswordedittext);
-        Button submit=(Button)findViewById(R.id.submitbtn);
+        final EditText mailornumber=findViewById(R.id.forgetpasswordedittext);
+        Button submit=findViewById(R.id.submitbtn);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
